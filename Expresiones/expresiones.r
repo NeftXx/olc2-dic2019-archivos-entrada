@@ -56,7 +56,7 @@ zro main() {
   _imp(2.5 * 'b'); // 245.0
   _imp(3.5 * 8.5); // 29.75
   _imp(2 * 'a'); // 194
-  _imp('d' * -3); // -300 fallo
+  _imp('d' * -3); // -300
 
   /*
    * DIVISION
@@ -95,7 +95,7 @@ zro main() {
   _imp(50 == 50.0); // true
   _imp(5.5 <> 30); // true
   _imp('a' == 'a'); // true
-  _imp(1.2 <> 0.2); // false fallo
+  _imp(1.2 <> 1.2); // false
   _imp(true == true); // true
   _imp(true <> true); // false
 }
