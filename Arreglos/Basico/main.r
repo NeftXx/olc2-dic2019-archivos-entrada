@@ -1,48 +1,18 @@
 zro main() {
-  //ent miArraydeArray [2][2];
-  //ent valores [2][2][3];
-  //ent valores2 [2][2][3] = { { {1, 2, 3}, {4, 5, 6} }, { {7, 8, 9}, {10, 11, 12} } };
+  _imp("=========== PRUEBA DE ARREGLOS ===========\n");
+  ent a = 2;
+  ent b = 3;
 
-  chr nombres[][] = {"Ronald", "Ronald2"};
+  ent c[a][b];
+  c[a-1][b-2]= a+b;
+  c[0][0]= 1;
+  c[0][1]= 1;
 
-  nombres[0][1] = 87;
+  _imp("El valor asignado al arreglo es: %e\n", c[c[0][0]][c[0][1]]);
+  _imp("El valor asignado al arreglo + 5 * 10 / 2 es: %e\n", c[c[0][0]][c[0][1]] + 5 * 10 / 2);
 
-  _imp(nombres[0]);
-  _imp(nombres[1]);
-
-/*
-  miArraydeArray[0][0] = 1;
-  miArraydeArray[0][1] = 2;
-  miArraydeArray[1][0] = 3;
-  miArraydeArray[1][1] = 4;
-
-  _imp(miArraydeArray[0][0]);
-  _imp(miArraydeArray[0][1]);
-  _imp(miArraydeArray[1][0]);
-  _imp(miArraydeArray[1][1]);
-*/
-/*  valores[0][0][0] = 2 * 5;
-  valores[0][1][0] = 2 * valores[0][0][0];
-  valores[0][1][1] = 2 * valores[0][1][0];
-  valores[1][0][2] = 2 * valores[0][1][1];
-
-  _imp(valores[0][0][0]);
-  _imp(valores[0][1][0]);
-  _imp(valores[0][1][1]);
-  _imp(valores[1][0][2]);
-*/
-/*
-  _imp(valores2[0][0][0] * 10);
-  _imp(valores2[0][0][1] * 10);
-  _imp(valores2[0][0][2] * 10);
-  _imp(valores2[0][1][0] * 10);
-  _imp(valores2[0][1][1] * 10);
-  _imp(valores2[0][1][2] * 10);
-  _imp(valores2[1][0][0] * 10);
-  _imp(valores2[1][0][1] * 10);
-  _imp(valores2[1][0][2] * 10);
-  _imp(valores2[1][1][0] * 10);
-  _imp(valores2[1][1][1] * 10);
-  _imp(valores2[1][1][2] * 10);
-*/
+  dec d[c[c[0][0]][c[0][1]]][c[c[0][0]][c[0][1]]][c[c[0][0]][c[0][1]]];
+  d[c[c[0][0]][c[0][1]]-1][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-3]= 10.0;
+  d[c[c[0][0]][c[0][1]]-3][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-1]= 20.0;
+  _imp("El resultado de de los valores anteriores es: %d", d[c[c[0][0]][c[0][1]]-1][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-3] * d[c[c[0][0]][c[0][1]]-3][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-1]);
 }
