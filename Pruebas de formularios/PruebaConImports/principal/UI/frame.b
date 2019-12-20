@@ -41,23 +41,23 @@ zro R:iniciar_ventana(){
 }
 
 zro miBoton:al_dar_click(){
-	
-	_imp("texto con formato %e ", hola); // imprime en consola 25
+	_imp("\n===================== EVENTO DEL BOTON 1 =====================\n");
+	_imp("texto con formato %e \n", hola); // imprime en consola 25
 
 	Rstring temporal = miInput.gettexto();
 
 	chr casteo[_pesode(temporal)];
 	casteo = _atxt(temporal); 
-	_imp("texto con formato 2 %s ", casteo); // imprime en consola 'este es un texto inicial'
-	_imp("texto con formato 2 %c ", casteo[0]); // imprime en consola 'e'
+	_imp("texto con formato 2 %s \n", casteo); // imprime en consola 'este es un texto inicial'
+	_imp("texto con formato 2 %c \n", casteo[0]); // imprime en consola 'e'
 
 	Rmensaje("valor de miInput: %s", casteo); //un cuadro de mensaje
 }
 
 zro miBoton2:al_dar_click(){
-	
+	_imp("\n===================== EVENTO DEL BOTON 2 =====================\n");	
 	miInput2.settexto(miInput.gettexto()); // copia valor de un cuadro a otro
-	_imp("texto con formato %e ", hola); // imprime en consola 25
+	_imp("texto con formato %e \n", hola); // imprime en consola 25
 
 	ent miSalida = miFactorial(1*1*1*1+1-2+5); //llamada a funcion importada 'lista.h'
 
