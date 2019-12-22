@@ -1,4 +1,5 @@
 #definir SIZE 10
+#definir arreglo {{1, 2, 3}, {4, 10, 8}}
 
 fusion Alumno
 {
@@ -86,5 +87,11 @@ zro main() {
   _imp("\n============ ALUMNOS ACTUALES ============\n");
   imprimirTabla(tablaAlumnos);
   _imp("Cantidad de elementos = %e \n", tablaAlumnos.elementos);
-  _imp("Factorcarga = %d", tablaAlumnos.factorcarga);
+  _imp("Factorcarga = %d\n\n", tablaAlumnos.factorcarga);
+
+  for (ent a = 0; a < 2; a++) {
+    for (ent b = 0; b < 3; b++) {
+      _imp("%e ", arreglo[a][b]);
+    }
+  }
 }
