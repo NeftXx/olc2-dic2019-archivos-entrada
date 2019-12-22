@@ -137,7 +137,7 @@ zro main() {
 
   _imp("\n========== RECURSIVIDAD ANIDADA ==========\n");
   ent m = 3;
-  ent n = 7;
+  ent n = 6;
   _imp("Funcion de Ackermann (%e, %e) = %e\n", m, n, ackermann(m, n));
 
 }

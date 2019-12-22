@@ -21,5 +21,5 @@ zro main() {
   cc.sig.a = 45;
   cc.sig.sig.b = 9;
 
-  _imp(cc.c + cc.sig.a + cc.sig.sig.b);
+  _imp("66 == %e\n", cc.c + cc.sig.a + cc.sig.sig.b);
 }
