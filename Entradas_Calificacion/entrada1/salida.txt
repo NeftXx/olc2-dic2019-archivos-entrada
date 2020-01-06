@@ -1,0 +1,18 @@
+Main:
+
+=> bienvenido a todos
+=> abriendo primera ventana...\n
+si selecciona selecciona{
+	=> abriendo segunda ventana menu\n
+	listo se setea 0 cada vez que se abre la ventana
+}
+=> Aun no esta listo \n
+=> (odnum aloh) caracter por caracter
+=> valor volteado odnum aloh \n
+=>\n\n\n\n____________________________________________________\n	
+=>  PROGRAMA FINALIZADO\n\n	
+=>  menu.b utilizado =>%e<= veces\n	
+=> ____________________________________________________\n			
+
+
+		
